@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-sm-12 col-lg-12">
+        <div class="card">
+            <div class="card-body" *ngIf="sucursalesList">
+                
+
+                <app-my-title
+                    [text]="'Lista de sucursales'">
+                </app-my-title>
+                            
+                <div class="" >
+                    <br>
+                    <app-my-button
+                        [class]="'btn btn-outline-primary'"
+                        [classIcon]="''"
+                        [text]="'Crear'"
+                        (click)="crearSucursal();"
+                        >
+                    </app-my-button>            
+                </div>
+
+                <app-my-table 
+                      [header]="head"
+                      [list]="sucursalesList"
+                      [edit]="true"
+                      (editOut)="editarSucursal($event)"
+                      [remove]="true"
+                      (deleteOut)="eliminarSucursal($event)"
+                      >
+                </app-my-table>
+
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+
+<button 
+    type="button" 
+    [ngClass]="class" 
+    (click)="click()">     
+                       
+    <i *ngIf="classIcon" [ngClass]="classIcon" ></i>  
+    {{(text ? text : "")}}     
+</button>
+

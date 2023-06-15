@@ -1,0 +1,37 @@
+.table-sm > :not(caption) > * > * {
+    padding: 4px 4px;
+}
+
+.btn-xs {
+    padding: 0.08rem 0.28rem;
+    font-size: 0.765625rem;
+    border-radius: 4px;
+}
+
+.img-talbe {
+    width: 50px;
+    height: 50px;
+}
+
+.contenido {
+    width:80%;
+    height:200px;
+    background-color:orange;
+    color:white;
+    font-size:24pt;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.my-badget {
+    line-height: 0.75 !important;
+}
+
+#ngx .ng-invalid, .ng-touched.ng-invalid {
+    border-color: #e9ecef;
+}
+
+#ngx .ng-valid, .ng-touched.ng-valid {
+    border-color: #e9ecef;
+}

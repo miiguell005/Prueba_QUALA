@@ -1,0 +1,54 @@
+
+
+<div *ngIf="list && list.length > 0">
+    
+    <div class="table-responsive">
+        <table class="table table-bordered table-sm">
+            <thead>
+                <tr class="table-secondary">
+                    <th *ngFor="let h of header; let i = index">
+                        <span>{{h.label}}</span>
+                    </th>
+                    <th *ngIf="edit || remove" [ngStyle]="{width: (6 + (edit ? 29 : 0) + (remove ? 29 : 0)) + 'px'}">
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let l of list; let j = index">
+                    <th *ngFor="let h of header; let k = index">
+                               
+                        <span *ngIf="h.property && !h.type">
+                            {{ l[h.property] ? l[h.property] : "" }}
+                        </span>
+                        <span *ngIf="h.property && h.type == 'Date'">
+                            {{ (l[h.property] ) | date:'dd/MM/yyyy' }}
+                        </span>
+                    </th>
+                    <th *ngIf="edit || remove">
+                        <app-my-button
+                            [class]="'btn btn-outline-dark btn-xs'"
+                            [classIcon]="'fas fa-pencil-alt'"
+                            [text]="'Edit'"
+                            [tooltip]="'Edit'"
+                            *ngIf="edit"
+                            (click)="editRecord(l)">
+
+                        </app-my-button>
+                        <span *ngIf="remove">&nbsp;</span> 
+                        <app-my-button
+                            [class]="'btn btn-outline-danger btn-xs'"
+                            [classIcon]="'fas fa-trash-alt'"
+                            [tooltip]="'Remove'"
+                            [text]="'Del'"
+                            *ngIf="remove"
+                            (click)="deleteRecord(l)">
+
+                        </app-my-button>      
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>

@@ -13,7 +13,7 @@ namespace QUALA_API.Controllers
 {
 
     [ApiController]
-    [Route("Moneda<")]
+    [Route("Moneda")]
     public class MonedaController : ControllerBase
     {
 

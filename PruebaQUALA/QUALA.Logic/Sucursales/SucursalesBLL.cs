@@ -37,6 +37,7 @@ namespace QUALA.Logic.Sucursales
             s.Direccion = sucursal.Direccion;
             s.Identificacion = sucursal.Identificacion;
             s.IdMoneda = sucursal.IdMoneda;
+            s.Codigo = sucursal.Codigo;
 
             s = helperBll.UsuarioModificacion(s);
             db.SaveChanges();

@@ -1,0 +1,19 @@
+.error {
+    color: red;
+}
+
+.success {
+    color: chartreuse;
+}
+
+.separador {
+    padding-top: 3px
+}
+
+#ngx .ng-invalid, .ng-touched.ng-invalid {
+    border-color: #e9ecef;
+}
+
+#ngx .ng-valid, .ng-touched.ng-valid {
+    border-color: #e9ecef;
+}

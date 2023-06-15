@@ -66,7 +66,7 @@ namespace QUALA_API.Controllers
                 var userId = Request.Headers.ContainsKey("userId") ? int.Parse(Request.Headers["userId"]) : 0;
                 var model = new SucursalesBLL(_context, userId);
                 var guardo = true;
-                if (sucursal.ID > 0)                
+                if (sucursal.ID == 0)                
                     guardo = model.PostSucursal(sucursal);
                 else
                     guardo = model.PutSucursal(sucursal);

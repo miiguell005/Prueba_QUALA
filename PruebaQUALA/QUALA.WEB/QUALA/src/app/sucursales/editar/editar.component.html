@@ -1,0 +1,112 @@
+<div class="row">
+    <div class="col-md-12" *ngIf="sucurlsa != null">
+
+        <app-my-title
+            [text]="titulo">
+        </app-my-title>    
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">                            
+                <div class="form-group">
+                    <label class="control-label col-form-label">
+                        Moneda <span style="color: red;">*</span>
+                    </label>
+                    <select class="form-select mr-sm-2"
+                        id="Moneda" 
+                        required="true"
+                        [(ngModel)]="sucurlsa.idMoneda"
+                        (ngModelChange)="changeValue()"
+                        *ngIf="monedasList">
+
+                        <option value="">
+                                Select an option          
+                        </option>
+                        <option *ngFor="let l of monedasList" [ngValue]="l.id">
+                            {{ l.codigo }} 
+                        </option>
+                    </select>      
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">                            
+                <div class="form-group">
+                    <label class="control-label col-form-label">
+                        Codigo  <span style="color: red;">*</span>
+                    </label>
+                    <input type="number" class="form-control" autocomplete="off"
+                         id="Codigo" placeholder="Codigo" 
+                        required="true"
+                        [(ngModel)]="sucurlsa.codigo" >
+                </div>
+            </div>
+        </div> 
+
+        
+        <div class="row">
+            <div class="col-sm-12 col-md-6">                            
+                <div class="form-group">
+                    <label class="control-label col-form-label">
+                        Descripcion  <span style="color: red;">*</span>
+                    </label>
+                    <input type="text" class="form-control" autocomplete="off"
+                        type="text" id="descripcion" placeholder="Descripcion" 
+                        required="true"
+                        maxLength="255"
+                        [(ngModel)]="sucurlsa.descripcion" >
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">                            
+                <div class="form-group">
+                    <label class="control-label col-form-label">
+                        Direccion  <span style="color: red;">*</span>
+                    </label>
+                    <input type="text" class="form-control" autocomplete="off"
+                        type="text" id="direccion" placeholder="Direccion" 
+                        required="true"
+                        maxLength="255"
+                        [(ngModel)]="sucurlsa.direccion" >
+                </div>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">                            
+                <div class="form-group">
+                    <label class="control-label col-form-label">
+                        Identificacion  <span style="color: red;">*</span>
+                    </label>
+                    <input type="text" class="form-control" autocomplete="off"
+                        type="text" id="Identificacion" placeholder="Identificacion" 
+                        required="true"
+                        maxLength="255"
+                        [(ngModel)]="sucurlsa.identificacion" >
+                </div>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center">                            
+                <app-my-button
+                    [class]="'btn btn-outline-primary'"
+                    [classIcon]="''"
+                    [text]="(this.idSucursal == '0' ? 'Crear' : 'Editar')"
+                    (click)="editar();"
+                    >
+                </app-my-button>         
+
+                <app-my-button
+                    [class]="'btn btn-outline-primary'"
+                    [classIcon]="''"
+                    [text]="'Atras'"
+                    (click)="regresar();"
+                    >
+                </app-my-button>         
+            </div>
+        </div> 
+        
+        <div class="" >
+            <br>
+               
+        </div>
+
+    </div>
+</div>
