@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUALA.ConectionDB", "QUALA.ConectionDB\QUALA.ConectionDB.csproj", "{28CA0F2C-6A32-4DA9-AD4C-16F8B355207A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUALA_API", "QUALA_API\QUALA_API.csproj", "{A7EAEFCD-EAA2-4F9A-AEA9-36DDEF06208A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUALA.Logic", "QUALA.Logic\QUALA.Logic.csproj", "{0038B2A2-279B-47DD-9440-3915AAB3F70F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUALA.WEB", "QUALA.WEB\QUALA.WEB.csproj", "{09D8ED7E-A58B-44BB-A824-E5285ADB8A94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28CA0F2C-6A32-4DA9-AD4C-16F8B355207A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28CA0F2C-6A32-4DA9-AD4C-16F8B355207A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28CA0F2C-6A32-4DA9-AD4C-16F8B355207A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28CA0F2C-6A32-4DA9-AD4C-16F8B355207A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7EAEFCD-EAA2-4F9A-AEA9-36DDEF06208A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EAEFCD-EAA2-4F9A-AEA9-36DDEF06208A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EAEFCD-EAA2-4F9A-AEA9-36DDEF06208A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EAEFCD-EAA2-4F9A-AEA9-36DDEF06208A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0038B2A2-279B-47DD-9440-3915AAB3F70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0038B2A2-279B-47DD-9440-3915AAB3F70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0038B2A2-279B-47DD-9440-3915AAB3F70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0038B2A2-279B-47DD-9440-3915AAB3F70F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D8ED7E-A58B-44BB-A824-E5285ADB8A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D8ED7E-A58B-44BB-A824-E5285ADB8A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D8ED7E-A58B-44BB-A824-E5285ADB8A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D8ED7E-A58B-44BB-A824-E5285ADB8A94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CA84E97-DF90-4A16-A816-9F7A07FB0B72}
+	EndGlobalSection
+EndGlobal
